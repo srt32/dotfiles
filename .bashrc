@@ -13,3 +13,4 @@ alias pi="python setup.py install"
 
 # js project aliases
 alias gt="grunt test"
+alias gs="grunt server"

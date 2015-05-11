@@ -16,6 +16,9 @@ nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
+" coffeescript whitespace
+autocmd FileType coffee set tabstop=2|set shiftwidth=2|set expandtab
+
 " tabs / spaces
 filetype plugin indent on
 set tabstop=4
