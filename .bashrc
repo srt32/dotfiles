@@ -9,7 +9,7 @@ source ~/git-flow-completion.bash
 
 # python project aliases
 alias pt="python setup.py nosetests"
-alias pi="python setup.py install"
+alias pipi="pip install -e ."
 
 # js project aliases
 alias gt="grunt test"
