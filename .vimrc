@@ -27,3 +27,6 @@ set expandtab
 
 " get access to bash aliases
 set shell=bash\ --login
+
+" JSHint
+let jshint2_save = 1
