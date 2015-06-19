@@ -14,4 +14,6 @@ alias pipi="pip install -e ."
 
 # js project aliases
 alias gt="grunt test"
+alias gtc="grunt test:client"
+alias gts="grunt test:server"
 alias gs="grunt server"
