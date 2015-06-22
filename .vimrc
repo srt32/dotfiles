@@ -1,5 +1,5 @@
 execute pathogen#infect()
-syntax on
+syntax enable
 filetype plugin indent on
 
 syntax enable
@@ -18,6 +18,7 @@ match ExtraWhitespace /\s\+$/
 
 " coffeescript whitespace
 autocmd FileType coffee set tabstop=2|set shiftwidth=2|set expandtab
+autocmd BufWritePost *.coffee CoffeeLint | cwindow
 
 " tabs / spaces
 filetype plugin indent on
