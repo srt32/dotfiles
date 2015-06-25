@@ -18,7 +18,7 @@ match ExtraWhitespace /\s\+$/
 
 " coffeescript whitespace
 autocmd FileType coffee set tabstop=2|set shiftwidth=2|set expandtab
-autocmd BufWritePost *.coffee CoffeeLint | cwindow
+autocmd BufWritePost *.coffee CoffeeLint | vertical cwindow
 
 " tabs / spaces
 filetype plugin indent on
