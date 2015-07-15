@@ -12,6 +12,9 @@ alias pt="python setup.py nosetests"
 alias ps="python manage.py runserver"
 alias pipi="pip install -e ."
 
+# git aliases
+alias gg="git log --graph --oneline --decorate --branches=*"
+
 # js project aliases
 alias gt="grunt test"
 alias gtc="grunt test:client"

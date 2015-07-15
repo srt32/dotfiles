@@ -26,8 +26,14 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" swp files
+set noswapfile
+
 " get access to bash aliases
 set shell=bash\ --login
 
 " JSHint
 let jshint2_save = 1
+
+" ctrlp.vim
+" let g:ctrlp_custom_ignore = 'bower_components\|node_modules\|DS_Store\|git\|dist'
