@@ -2,7 +2,7 @@ PATH=/usr/local/bin:$PATH
 
 #virtualenv
 export WORKON_HOME=~/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2.7
+export PATH=/usr/local/bin:$PATH
 source /usr/local/bin/virtualenvwrapper.sh
 
 #nvm
