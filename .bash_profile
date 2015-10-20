@@ -11,9 +11,7 @@ source $(brew --prefix nvm)/nvm.sh
 
 eval "$(rbenv init -)"
 
-#Make node find modules when using nvm
+#Make node find modules when using nvm: TODO: don't hardcode version
 NODE_PATH=$NODE_PATH:/Users/simon/.nvm/versions/node/v0.12.2/lib/node_modules/
-
-export GEMFURY_REPO_URL=https://pypi.fury.io/9dLDbAMpUzh7Tu-x4wsz/globality/
 
 . "$HOME/.bashrc"

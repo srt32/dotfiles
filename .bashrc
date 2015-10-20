@@ -20,3 +20,10 @@ alias gt="grunt test"
 alias gtc="grunt test:client"
 alias gts="grunt test:server"
 alias gs="grunt serve"
+
+# node related
+alias ni="npm install"
+
+export PATH="$HOME/.bin:$PATH"
+
+eval "$(hub alias -s)"
