@@ -20,6 +20,9 @@ match ExtraWhitespace /\s\+$/
 autocmd FileType coffee set tabstop=2|set shiftwidth=2|set expandtab
 autocmd BufWritePost *.coffee CoffeeLint | vertical cwindow
 
+" ruby
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+
 " tabs / spaces
 filetype plugin indent on
 set tabstop=4
