@@ -16,10 +16,8 @@ alias pipi="pip install -e ."
 alias gg="git log --graph --oneline --decorate --branches=*"
 
 # js project aliases
-alias gt="grunt test"
-alias gtc="grunt test:client"
-alias gts="grunt test:server"
-alias gs="grunt serve"
+alias gt="gulp test"
+alias gs="gulp serve"
 
 # node related
 alias ni="npm install"
