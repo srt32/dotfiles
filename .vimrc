@@ -8,7 +8,7 @@ let g:solarized_termcolors=256
 colorscheme solarized
 
 " python linting
-autocmd BufWritePost *.py call Flake8()
+" autocmd BufWritePost *.py call Flake8()
 
 " whitespace
 autocmd syntax * SpaceHi
