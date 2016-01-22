@@ -1,4 +1,5 @@
 PATH=/usr/local/bin:$PATH
+PATH=$PATH:/path/to/elixir/bin
 
 #virtualenv
 export WORKON_HOME=~/.virtualenvs
