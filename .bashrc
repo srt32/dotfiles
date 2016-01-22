@@ -22,6 +22,9 @@ alias gs="gulp serve"
 # node related
 alias ni="npm install"
 
+# docker-machine
+eval $(docker-machine env default)
+
 export PATH="$HOME/.bin:$PATH"
 
 eval "$(hub alias -s)"
