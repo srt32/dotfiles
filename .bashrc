@@ -17,6 +17,7 @@ alias gg="git log --graph --oneline --decorate --branches=*"
 
 # js project aliases
 alias gt="gulp test"
+alias gtf="gulp test:fast"
 alias gs="gulp serve"
 
 # node related
