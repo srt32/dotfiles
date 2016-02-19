@@ -39,5 +39,8 @@ set shellcmdflag=-ic
 " JSHint
 let jshint2_save = 1
 
+" hide pyc files
+let g:netrw_list_hide= '.*\.pyc$'
+
 " ctrlp.vim
 " let g:ctrlp_custom_ignore = 'bower_components\|node_modules\|DS_Store\|git\|dist'
