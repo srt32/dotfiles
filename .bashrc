@@ -29,6 +29,9 @@ alias ni="npm install"
 # docker-machine
 eval $(docker-machine env default)
 
+# Terraform
+export PATH=/usr/local/terraform/bin:/home/simon/terraform:$PATH
+
 export PATH="$HOME/.bin:$PATH"
 
 eval "$(hub alias -s)"
