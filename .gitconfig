@@ -1,0 +1,13 @@
+[core]
+	excludesfile = /Users/simon/.gitignore
+[user]
+	email = simon@globality.com
+[alias]
+	co = checkout
+	st = status
+[push]
+	default = simple
+[credential]
+	helper = osxkeychain
+[commit]
+    template = ~/.gitmessage
