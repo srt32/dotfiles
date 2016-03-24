@@ -34,4 +34,6 @@ export PATH=/usr/local/terraform/bin:/home/simon/terraform:$PATH
 
 export PATH="$HOME/.bin:$PATH"
 
+export GOPATH=$HOME
+
 eval "$(hub alias -s)"

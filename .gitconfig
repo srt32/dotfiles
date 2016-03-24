@@ -5,6 +5,7 @@
 [alias]
 	co = checkout
 	st = status
+	ca = commit --amend
 [push]
 	default = simple
 [credential]
