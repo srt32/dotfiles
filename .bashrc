@@ -20,6 +20,9 @@ alias gt="gulp test"
 alias gtf="gulp test:fast"
 alias gs="gulp serve"
 
+# hub
+alias hb="hub browse"
+
 # Remove all *.pyc files
 alias killpyc="find . -name "*.pyc" | xargs rm -f"
 
