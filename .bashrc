@@ -40,3 +40,12 @@ export PATH="$HOME/.bin:$PATH"
 export GOPATH=$HOME
 
 eval "$(hub alias -s)"
+
+if [ "`docker-machine status development`" = "Running" ]; then
+    eval "$(docker-machine env development)"
+fi
+
+rmimage() {
+    docker rm -f $1 && docker images | grep $1 | awk '{print $3}' | xargs docker rmi
+}
+alias rmi=rmimage
