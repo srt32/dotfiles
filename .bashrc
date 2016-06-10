@@ -30,7 +30,7 @@ alias killpyc="find . -name "*.pyc" | xargs rm -f"
 alias ni="npm install"
 
 # docker-machine
-eval $(docker-machine env default)
+# eval $(docker-machine env default)
 
 # Terraform
 export PATH=/usr/local/terraform/bin:/home/simon/terraform:$PATH
@@ -38,6 +38,7 @@ export PATH=/usr/local/terraform/bin:/home/simon/terraform:$PATH
 export PATH="$HOME/.bin:$PATH"
 
 export GOPATH=$HOME
+export PATH=$PATH:$GOPATH/bin
 
 eval "$(hub alias -s)"
 
