@@ -40,7 +40,7 @@ set shellcmdflag=-ic
 let g:netrw_list_hide= '.*\.pyc$'
 
 " ctrlp.vim
-" let g:ctrlp_custom_ignore = 'bower_components\|node_modules\|DS_Store\|git\|dist'
+set wildignore+=*.pyc
 
 " bind K to grep word under cursor
 nnoremap K :Ag! "\b<C-R><C-W>\b"<CR>:cw<CR>
