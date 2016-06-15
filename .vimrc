@@ -7,8 +7,8 @@ set background=light
 let g:solarized_termcolors=256
 colorscheme solarized
 
-" python linting
-" autocmd BufWritePost *.py call Flake8()
+" set leader to .
+let mapleader=","
 
 " whitespace
 autocmd syntax * SpaceHi
@@ -36,9 +36,6 @@ set noswapfile
 set shell=bash\ --login
 set shellcmdflag=-ic
 
-" JSHint
-let jshint2_save = 1
-
 " hide pyc files
 let g:netrw_list_hide= '.*\.pyc$'
 
@@ -47,3 +44,16 @@ let g:netrw_list_hide= '.*\.pyc$'
 
 " bind K to grep word under cursor
 nnoremap K :Ag! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
+" map F2 to srcgraph examples
+" https://github.com/sourcegraph/sourcegraph-vim
+nnoremap <F2> :GRAPH<CR>
+
+" enable goimports via vim-go
+let g:go_fmt_command = "goimports"
+
+" go commands
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>c <Plug>(go-coverage)
