@@ -8,7 +8,7 @@ source ~/git-completion.bash
 source ~/git-flow-completion.bash
 
 # python project aliases
-alias pt="python setup.py nosetests"
+alias pt="python setup.py -q nosetests"
 alias ps="python manage.py runserver"
 alias pipi="pip install -e ."
 
