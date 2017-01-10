@@ -1,7 +1,8 @@
 [core]
 	excludesfile = /Users/simon/.gitignore
 [user]
-	email = simon@globality.com
+	email = simon@backerkit.com
+	name = Simon Taranto
 [alias]
 	co = checkout
 	st = status
