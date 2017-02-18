@@ -11,7 +11,7 @@ colorscheme solarized
 let mapleader=","
 
 " whitespace
-autocmd syntax * SpaceHi
+" autocmd syntax * SpaceHi
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/

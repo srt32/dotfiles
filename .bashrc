@@ -27,6 +27,9 @@ export PATH=$PATH:$GOPATH/bin
 
 eval "$(hub alias -s)"
 
+# brew install direnv
+eval "$(direnv hook bash)"
+
 # speed up key repeat rates
 defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
 defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
