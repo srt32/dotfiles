@@ -7,8 +7,14 @@ set background=light
 let g:solarized_termcolors=256
 colorscheme solarized
 
-" set leader to .
-let mapleader=","
+" set leader to space
+let mapleader = "\<Space>"
+
+" for https://github.com/thoughtbot/vim-rspec
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
 
 " whitespace
 " autocmd syntax * SpaceHi
