@@ -1,5 +1,5 @@
 PATH=/usr/local/bin:$PATH
-PATH=$PATH:/path/to/elixir/bin
+PATH=$PATH:~/Library/Python/2.7/bin
 
 export PATH=/usr/local/bin:$PATH
 
