@@ -1,8 +1,6 @@
 execute pathogen#infect()
 syntax enable
-filetype plugin indent on
 
-syntax enable
 set background=light
 let g:solarized_termcolors=256
 colorscheme solarized
@@ -21,10 +19,6 @@ map <Leader>a :call RunAllSpecs()<CR>
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
-
-" coffeescript whitespace
-autocmd FileType coffee set tabstop=2|set shiftwidth=2|set expandtab
-" autocmd BufWritePost *.coffee CoffeeLint | vertical cwindow
 
 " ruby
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
@@ -50,10 +44,6 @@ set wildignore+=*.pyc
 
 " bind K to grep word under cursor
 nnoremap K :Ag! "\b<C-R><C-W>\b"<CR>:cw<CR>
-
-" map F2 to srcgraph examples
-" https://github.com/sourcegraph/sourcegraph-vim
-nnoremap <F2> :GRAPH<CR>
 
 " enable goimports via vim-go
 let g:go_fmt_command = "goimports"

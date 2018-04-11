@@ -1,7 +1,7 @@
 [core]
 	excludesfile = /Users/simon/.gitignore
 [user]
-	email = simon@backerkit.com
+	email = simon.taranto@gmail.com
 	name = Simon Taranto
 [alias]
 	co = checkout
@@ -13,3 +13,5 @@
 	helper = osxkeychain
 [commit]
     template = ~/.gitmessage
+[http]
+	postBuffer = 524288000

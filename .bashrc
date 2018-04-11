@@ -1,3 +1,6 @@
+# set vi as terminal editor
+export EDITOR=vi
+
 if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
     GIT_PROMPT_ONLY_IN_REPO=1
     GIT_PROMPT_THEME="Single_line"
