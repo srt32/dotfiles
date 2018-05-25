@@ -2,3 +2,6 @@
 *.swo
 *.swn
 *.swm
+
+**/.DS_Store
+.DS_Store
