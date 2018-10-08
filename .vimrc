@@ -9,10 +9,19 @@ colorscheme solarized
 let mapleader = "\<Space>"
 
 " for https://github.com/thoughtbot/vim-rspec
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
+" map <Leader>t :call RunCurrentSpecFile()<CR>
+" map <Leader>s :call RunNearestSpec()<CR>
+" map <Leader>l :call RunLastSpec()<CR>
+" map <Leader>a :call RunAllSpecs()<CR>
+
+" for https://github.com/janko-m/vim-test
+map <Leader>t :TestFile<CR>
+map <Leader>s :TestNearest<CR>
+map <Leader>l :TestLast<CR>
+map <Leader>a :TestSuite<CR>
+
+" support using overridden minitest executable - https://github.com/janko-m/vim-test/wiki/Minitest#m-runner
+let g:test#ruby#rails#executable = 'bin/tt'
 
 " whitespace
 " autocmd syntax * SpaceHi
