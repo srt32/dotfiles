@@ -42,6 +42,9 @@ set expandtab
 " swp files
 set noswapfile
 
+" show current filepath
+set statusline+=%F
+
 " get access to bash aliases
 set shell=bash\ --login
 set shellcmdflag=-ic
@@ -63,3 +66,6 @@ au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
+
+" turn on spellcheck per https://thoughtbot.com/blog/vim-spell-checking
+autocmd BufRead,BufNewFile *.md setlocal spell
