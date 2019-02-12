@@ -69,3 +69,4 @@ au FileType go nmap <leader>c <Plug>(go-coverage)
 
 " turn on spellcheck per https://thoughtbot.com/blog/vim-spell-checking
 autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd FileType gitcommit setlocal spell
