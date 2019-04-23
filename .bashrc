@@ -38,3 +38,10 @@ defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+killportprocs() {
+    local targetport=${1:?pass in target port}
+    local pids=$(lsof -i :$targetport | awk '{print $2}' | tail +2)
+    echo "$pids"
+    echo $pids | xargs kill -9
+}
