@@ -16,6 +16,7 @@ git clone git://github.com/altercation/vim-colors-solarized.git;
 git clone git://github.com/thoughtbot/vim-rspec.git;
 git clone git://github.com/tpope/vim-rails.git;
 git clone git://github.com/tpope/vim-fugitive.git;
+git clone https://github.com/janko-m/vim-test
 git clone git://github.com/kien/ctrlp.vim.git;
 git clone git://github.com/rking/ag.vim.git;
 popd
