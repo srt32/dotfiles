@@ -70,3 +70,10 @@ au FileType go nmap <leader>c <Plug>(go-coverage)
 " turn on spellcheck per https://thoughtbot.com/blog/vim-spell-checking
 autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd FileType gitcommit setlocal spell
+
+" js linting - https://github.com/dgraham/vim-eslint
+noremap <leader>c  :make % <cr>:cwindow<cr>:redraw!<cr>
+
+" shortcuts for running DB queries via https://github.com/tpope/vim-dadbod
+command -nargs=+ DBdev :DB mysql://root@localhost/github_development <args>
+command -nargs=+ DBtest :DB mysql://root@localhost/github_test <args>
